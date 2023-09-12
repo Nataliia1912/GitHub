@@ -1,0 +1,593 @@
+{
+  "id": "1aac7e60-b308-434c-8823-395ae1ac128a",
+  "version": "2.0",
+  "name": "Homework Lesson 25",
+  "url": "https://eva.ua/ua/",
+  "tests": [{
+    "id": "267f1cbd-85a4-4cf0-8de8-005036a6967e",
+    "name": "Promotions",
+    "commands": [{
+      "id": "d781d954-07b3-4dfb-b28f-a28a4f16888f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b1fe8f8-52dd-4b5c-9215-f6d6a2e1ced6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Всі акції')]",
+      "targets": [
+        ["css=.o-promo-grid:nth-child(1) .sf-button", "css:finder"],
+        ["xpath=//div[@id='home']/div[2]/div/a/button", "xpath:idRelative"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Всі акції')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b4840e-77b2-4f3e-a9ec-e8f728879e98",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.promotions__header",
+      "targets": [
+        ["css=.promotions__header", "css:finder"],
+        ["xpath=//div[@id='promotions']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "657584d6-5211-447f-a171-2b462cfc5423",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.promotions__location",
+      "targets": [
+        ["css=.promotions__location", "css:finder"],
+        ["xpath=//div[@id='promotions']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "Діючі акції на сайті та в магазинах"
+    }, {
+      "id": "4947f87c-0c97-4eed-a598-03d038531d95",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='promotions']/div/div[2]/div/div/div",
+      "targets": [
+        ["id=sfSelect", "id"],
+        ["css=#sfSelect", "css:finder"],
+        ["xpath=//div[@id='sfSelect']", "xpath:attributes"],
+        ["xpath=//div[@id='promotions']/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c94e2e6-8690-454e-87e4-edb767060781",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#sfSelect > span",
+      "targets": [
+        ["css=#sfSelect > span", "css:finder"],
+        ["xpath=//div[@id='sfSelect']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'За популярністю')]", "xpath:innerText"]
+      ],
+      "value": "За популярністю"
+    }, {
+      "id": "c10c4e8b-4870-481e-9877-b250ae5be7eb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.promotions__pagination",
+      "targets": [
+        ["css=.promotions__pagination", "css:finder"],
+        ["xpath=//div[@id='promotions']/div[2]/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80e78576-5e73-4b39-a194-932f22e2a032",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sf-o-pagination__item--next",
+      "targets": [
+        ["css=.sf-o-pagination__item--next", "css:finder"],
+        ["xpath=//div[@id='promotions']/div[2]/div[2]/div/div[2]/nav/a[6]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ua/promotion/?p=2')])[2]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2513c4c3-cc89-4d72-a01b-e2bcf57f1c42",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='promotions']/div[2]/div[2]/div/div[2]/button",
+      "targets": [
+        ["css=.color-secondary", "css:finder"],
+        ["xpath=//div[@id='promotions']/div[2]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Ще акції')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1438a642-c956-4986-8bac-7254dffd8171",
+      "comment": "",
+      "command": "click",
+      "target": "css=.router-link-active > .a-logo-img",
+      "targets": [
+        ["css=.router-link-active > .a-logo-img", "css:finder"],
+        ["xpath=//img[@alt='EVA.UA']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/div/header/div/span/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5aa46e7-9a4d-4415-9892-6bf871a41ba7",
+    "name": "Delivery and payment",
+    "commands": [{
+      "id": "6eaa995f-14f6-4b1d-9915-1075697c8549",
+      "comment": "",
+      "command": "open",
+      "target": "https://eva.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61f98cdf-5eb2-4495-bd80-7db1d26704d3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Доставка i оплата')]",
+      "targets": [
+        ["css=.router-link-exact-active > .nav-top__el-text", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div/div[2]/div[2]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Доставка i оплата')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e513e34-f229-4962-8876-1c0ffaa0d941",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Доставка в інтернет-магазині EVA.UA')]",
+      "targets": [
+        ["css=.shipping-method-list__title > .sf-heading__title", "css:finder"],
+        ["xpath=//div[@id='static']/div/header/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Доставка в інтернет-магазині EVA.UA')]", "xpath:innerText"]
+      ],
+      "value": "Доставка в інтернет-магазині EVA.UA"
+    }, {
+      "id": "84eee064-c42c-424b-85a7-1a36b16519b3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='static']/div/div",
+      "targets": [
+        ["css=.m-informing", "css:finder"],
+        ["xpath=//div[@id='static']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05b0765e-28ae-411b-892e-21f8acc99b44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shipping-method-list__city-current > .ico-dropdown",
+      "targets": [
+        ["css=.shipping-method-list__city-current > .ico-dropdown", "css:finder"],
+        ["xpath=//div[@id='static']/div/div[2]/span[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22ad9bc-66f7-4685-9a38-4059f1861188",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.modal__title > span",
+      "targets": [
+        ["css=.modal__title > span", "css:finder"],
+        ["xpath=//div[@id='viewport']/div[3]/div/div/div[2]/header/span/span", "xpath:idRelative"],
+        ["xpath=//header/span/span", "xpath:position"]
+      ],
+      "value": "Виберіть своє місто"
+    }, {
+      "id": "2e83bfbd-bfb2-4617-9a76-2fdaefee5fb9",
+      "comment": "",
+      "command": "store",
+      "target": "Запоріжжя",
+      "targets": [],
+      "value": "searchCity"
+    }, {
+      "id": "70743e37-6ef2-4468-a947-b66e9d1a1a99",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@type='text'])[2]",
+      "targets": [
+        ["css=.v-ui-select-autocomplete__wrapper input", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div[3]/div/div/div[2]/div/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "${searchCity}"
+    }]
+  }, {
+    "id": "a204f44c-7cbc-4c41-871f-ba069b11f757",
+    "name": "Product catalog",
+    "commands": [{
+      "id": "f1cd2117-adc1-49dc-b544-cef61f9cf3aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47ef4756-fa6e-4800-9bff-64888a52cee5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(.,'Каталог товарів')]",
+      "targets": [
+        ["css=.navigation__trigger", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/header/nav/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог товарів')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d7a117-ea52-4afc-a4a5-f269efd6147c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__trigger",
+      "targets": [
+        ["css=.navigation__trigger", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/header/nav/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог товарів')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb36908-be42-44c5-9a29-b084df5bc4a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Макіяж')]",
+      "targets": [
+        ["css=.mega-menu__left-side-el--hovered > .mega-menu__left-side-el-text", "css:finder"],
+        ["xpath=//div[@id='home']/div/div/div/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Макіяж')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "403f17e3-0ccd-4303-b1a0-27d47105bec0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Декоративна косметика')]",
+      "targets": [
+        ["css=.portal-page__title", "css:finder"],
+        ["xpath=//div[@id='category']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Декоративна косметика')]", "xpath:innerText"]
+      ],
+      "value": "Декоративна косметика"
+    }, {
+      "id": "6b1869a2-a6af-4dab-a60e-307a455dd81e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.o-swype h3",
+      "targets": [
+        ["css=.o-swype h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[2]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Популярні категорії товарів')]", "xpath:innerText"]
+      ],
+      "value": "Популярні категорії товарів"
+    }, {
+      "id": "79e34651-bcbd-4921-acfb-85140affcdd4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.o-promotions h3",
+      "targets": [
+        ["css=.o-promotions h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[3]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Акції')]", "xpath:innerText"]
+      ],
+      "value": "Акції"
+    }, {
+      "id": "b2f6d954-cea3-4e74-81d6-18a345094773",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portal-page__block:nth-child(4) h3",
+      "targets": [
+        ["css=.portal-page__block:nth-child(4) h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[4]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Топ продажів')]", "xpath:innerText"]
+      ],
+      "value": "Топ продажів"
+    }, {
+      "id": "0597f011-db7d-496a-b9c3-1588f673d001",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.portal-page__block:nth-child(5) h3",
+      "targets": [
+        ["css=.portal-page__block:nth-child(5) h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[5]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Все що потрібно для ідельного макіяжу')]", "xpath:innerText"]
+      ],
+      "value": "Все що потрібно для ідельного макіяжу"
+    }, {
+      "id": "96287fa2-c078-4b30-8e0d-2bcaff6ad987",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.o-brands h3",
+      "targets": [
+        ["css=.o-brands h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[6]/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Популярні бренди')]", "xpath:innerText"]
+      ],
+      "value": "Популярні бренди"
+    }, {
+      "id": "a356785b-4ed1-405c-bc8c-59dc20b42477",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.o-reviews h3",
+      "targets": [
+        ["css=.o-reviews h3", "css:finder"],
+        ["xpath=//div[@id='category']/div/div/div[2]/div[7]/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Відгуки на товари')]", "xpath:innerText"]
+      ],
+      "value": "Відгуки на товари"
+    }]
+  }, {
+    "id": "df8ee8e2-d687-47a5-8efa-b42f6dca2af6",
+    "name": "EVA beauty",
+    "commands": [{
+      "id": "5e03fed6-3c3d-4de8-9517-5cab908c1fb6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1e99f61-236a-4d20-9e1a-251b48e9267b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=EVABeauty",
+      "targets": [
+        ["linkText=EVABeauty", "linkText"],
+        ["css=.m-market-category-item:nth-child(1) > .sf-link", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/beauty/')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'EVABeauty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31a302a3-08c3-4592-b8b5-a756df369cbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-market-category-item:nth-child(1) .m-market-category-item--title",
+      "targets": [
+        ["css=.m-market-category-item:nth-child(1) .m-market-category-item--title", "css:finder"],
+        ["xpath=//div[@id='home']/div/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'EVABeauty')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa1f7bb5-d81a-4f6a-a7ca-0c02a3b5d8d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#eva-beauty-block .m-trend-tags > .beauty-section__block--title",
+      "targets": [
+        ["css=#eva-beauty-block .m-trend-tags > .beauty-section__block--title", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/section/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'У тренді пошуку')]", "xpath:innerText"]
+      ],
+      "value": "У тренді пошуку"
+    }, {
+      "id": "32bfd25a-477a-45c6-80e2-88fae54d8582",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Доглянуте обличчя')]",
+      "targets": [
+        ["css=.o-main__category:nth-child(1) .o-main__category--label", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/div[2]/div[2]/div/a/div/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Доглянуте обличчя')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38038056-ccfe-4bc8-b7e2-9cd4083c9aa0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.o-main__category:nth-child(2) .sf-image__overlay",
+      "targets": [
+        ["css=.o-main__category:nth-child(2) .sf-image__overlay", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/div[2]/div[2]/div[2]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a645d5fb-5bf9-48b6-aa80-7d7eb37a4a56",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.o-main__category:nth-child(3) .sf-image__overlay",
+      "targets": [
+        ["css=.o-main__category:nth-child(3) .sf-image__overlay", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/div[2]/div[2]/div[3]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3fe9010-c7ee-4043-bd3e-99fc52758a2f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.o-main__category:nth-child(4) .o-main__category--label",
+      "targets": [
+        ["css=.o-main__category:nth-child(4) .o-main__category--label", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/div[2]/div[2]/div[4]/a/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Трендовий макіяж')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38a04fde-a9e9-4995-a5d3-5f845609fa84",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.o-main__category:nth-child(5) .sf-image__overlay",
+      "targets": [
+        ["css=.o-main__category:nth-child(5) .sf-image__overlay", "css:finder"],
+        ["xpath=//div[@id='eva-beauty-block']/div/div[2]/div[2]/div[5]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44f34326-ea39-4493-9023-c0014defbaeb",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h3[contains(.,'ТОП-10 продуктів краси')]",
+      "targets": [
+        ["css=#eva-beauty-block .o-products > .beauty-section__block--title", "css:finder"],
+        ["xpath=(//div[@id='eva-beauty-block']/div/div/h3)[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'ТОП-10 продуктів краси')]", "xpath:innerText"]
+      ],
+      "value": "ТОП-10 продуктів краси"
+    }]
+  }, {
+    "id": "bec665ea-45da-4206-823a-41781efe51e0",
+    "name": "Blog",
+    "commands": [{
+      "id": "abb63bf5-91e4-491f-8488-c3b147644ee6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b4f4ae6-bbdc-4e4f-82d2-e7f023492160",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.o-blog__callout > .sf-button",
+      "targets": [
+        ["css=.o-blog__callout > .sf-button", "css:finder"],
+        ["xpath=//div[@id='home']/div[2]/div[10]/a/button", "xpath:idRelative"],
+        ["xpath=//div[10]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Перейти у блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3910c522-f429-40a9-8cc2-0081b4c3badc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.o-blog__callout > .sf-button",
+      "targets": [
+        ["css=.o-blog__callout > .sf-button", "css:finder"],
+        ["xpath=//div[@id='home']/div[2]/div[10]/a/button", "xpath:idRelative"],
+        ["xpath=//div[10]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Перейти у блог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "265b1636-f88e-452c-80da-8a70d9da8007",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.swiper-slide-active .composite-slide-wrap",
+      "targets": [
+        ["css=.swiper-slide-active .composite-slide-wrap", "css:finder"],
+        ["xpath=//div[6]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbc9577b-ef74-467d-824e-0b5b67d17f4d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Популярні статті",
+      "targets": [
+        ["linkText=Популярні статті", "linkText"],
+        ["css=.editor-block > .info-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Популярні статті')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://blog.eva.ua/category/kolonka-redaktora/')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Популярні статті')]", "xpath:innerText"]
+      ],
+      "value": "Популярні статті"
+    }, {
+      "id": "13097360-ee81-4a6f-8e95-6b9a2e382286",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Наші експерти",
+      "targets": [
+        ["linkText=Наші експерти", "linkText"],
+        ["css=.expertMobile > .info-title > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Наші експерти')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://blog.eva.ua/eksperty/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"]
+      ],
+      "value": "Наші експерти"
+    }, {
+      "id": "f8b3a261-6f53-475a-a7be-89bc43bde482",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(.,'Підписатись')]",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='subscrform']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Підписатись')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abfd1114-8d95-4b3a-8114-4330ab563575",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Показати більше",
+      "targets": [
+        ["linkText=Показати більше", "linkText"],
+        ["css=.loadmorenews", "css:finder"],
+        ["xpath=//a[contains(text(),'Показати більше')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Показати більше')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89e1f12-72e6-4548-897c-32b18a66bf92",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.subscribe-form__title",
+      "targets": [
+        ["css=.subscribe-form__title", "css:finder"],
+        ["xpath=//form[@id='subscrform']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div", "xpath:position"]
+      ],
+      "value": "Підписатись на розсилку"
+    }, {
+      "id": "1941c807-082b-428d-a21c-81192ee3824f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=0 800 303 700",
+      "targets": [
+        ["linkText=0 800 303 700", "linkText"],
+        ["css=.phone", "css:finder"],
+        ["xpath=(//a[contains(text(),'0 800 303 700')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'tel:0800303700')])[3]", "xpath:href"],
+        ["xpath=//footer/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4b7e117a-9384-4f6c-87f2-3a8eada0174d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["267f1cbd-85a4-4cf0-8de8-005036a6967e"]
+  }],
+  "urls": ["https://eva.ua/ua/"],
+  "plugins": []
+}
